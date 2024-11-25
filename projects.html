@@ -10,11 +10,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
         }
         header {
-            background-color: #f4f4f4;
+            background-color: #333;
+            color: white;
             padding: 10px 0;
-            border-bottom: 1px solid #ddd;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             list-style: none;
@@ -22,33 +27,48 @@
             padding: 0;
             display: flex;
             justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
+            gap: 15px;
         }
         nav ul li a {
+            color: white;
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #555;
         }
         main {
-            text-align: center;
-            padding: 20px;
+            padding: 100px 20px 20px; /* Adjusted for fixed navbar */
+            max-width: 800px;
+            margin: 0 auto;
         }
         main h1 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 20px;
+            color: #333;
         }
         main ul {
             list-style: none;
             padding: 0;
         }
-        main ul li {
-            margin: 15px 0;
+        main ul > li {
+            margin: 20px 0;
             font-size: 1.2em;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        main ul li ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        main ul li ul li {
+            font-size: 1em;
+            color: #555;
         }
     </style>
 </head>
@@ -60,17 +80,3 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skill Sets</a></li>
-                <li><a href="employment.html">Employment History</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Projects and Involvement</h1>
-        <ul>
-            <li><strong>Artificial Intelligence and Machine Learning Club:</strong> Developing an AI program to enhance customer service productivity.</li>
-            <li><strong>MIS Student Association:</strong> Enhancing experiences and knowledge in MIS through corporate, campus, and community involvement.</li>
-            <li><strong>OU Esports:</strong> Represented as a top athlete on the CSGO team.</li>
-        </ul>
-    </main>
-</body>
-</html>
