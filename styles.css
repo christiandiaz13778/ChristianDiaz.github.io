@@ -10,20 +10,27 @@ header nav ul {
     background-color: #333;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center items */
+    gap: 10px; /* Add spacing between items */
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px; /* Adjust padding for better button shape */
+    border-radius: 5px; /* Add rounded corners */
 }
 
 header nav ul li a:hover {
     background-color: #555;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+header nav ul li:first-child a {
+    background-color: #007BFF; /* Different color for "Home" */
+    color: white;
+    font-weight: bold; /* Make "Home" bolder */
+    border: 2px solid white; /* Add a border for emphasis */
 }
+
+main {
+    padding: 
